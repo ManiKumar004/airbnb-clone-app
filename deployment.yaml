@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: airbnb-clone-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: airbnb-clone
+  template:
+    metadata:
+      labels:
+        app: airbnb-clone
+    spec:
+      containers:
+        - name: airbnb-clone
+          image: manikumar004/airbnb-clone:latest
+          ports:
+            - containerPort: 80
