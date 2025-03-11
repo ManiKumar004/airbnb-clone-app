@@ -16,4 +16,4 @@ spec:
         - name: airbnb-clone
           image: manikumar004/airbnb-clone:latest
           ports:
-            - containerPort: 80
+            - containerPort: 3000
