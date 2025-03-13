@@ -13,7 +13,7 @@ spec:
         app: airbnb-clone
     spec:
       containers:
-        - name: airbnb-clone
+        - name: airbnb-clone-container
           image: manikumar004/airbnb-clone:latest
           ports:
             - containerPort: 3000
